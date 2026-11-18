@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Supplementary Videos — Persistent Multi-UAV Urban Target Tracking</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #1d4ed8;
+      --ours: #15803d;
+      --base: #b91c1c;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 2rem 1.25rem;
+      border-bottom: 1px solid #1e293b;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 1.55rem;
+      margin: 0 0 0.5rem 0;
+      line-height: 1.3;
+    }
+    .authors {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+    .affil {
+      color: #94a3b8;
+      font-size: 0.85rem;
+    }
+    .nav-tabs {
+      display: flex;
+      gap: 0.75rem;
+      margin: 1.5rem 0 1rem;
+      flex-wrap: wrap;
+    }
+    .tab-btn {
+      padding: 0.6rem 1.1rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--border);
+      background: var(--card);
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .tab-btn.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+    .paradigm-desc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.5rem;
+      padding: 0.9rem 1.1rem;
+      margin-bottom: 1.25rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .route-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 0.65rem;
+      padding: 1.1rem;
+      margin-bottom: 1.25rem;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+      scroll-margin-top: 1rem;
+    }
+    .route-card.highlight {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.2);
+    }
+    .route-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.85rem;
+      padding-bottom: 0.6rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .route-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .route-sub {
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 400;
+      margin-left: 0.5rem;
+    }
+    .controls-bar {
+      display: flex;
+      gap: 0.45rem;
+      align-items: center;
+    }
+    .ctrl-btn {
+      padding: 0.32rem 0.7rem;
+      font-size: 0.82rem;
+      border-radius: 0.375rem;
+      border: 1px solid var(--border);
+      background: #f1f5f9;
+      color: var(--text);
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .ctrl-btn:hover {
+      background: #e2e8f0;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 1rem;
+    }
+    .video-box {
+      display: flex;
+      flex-direction: column;
+    }
+    .video-label {
+      font-size: 0.9rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .badge-ours {
+      color: var(--ours);
+      background: #dcfce7;
+      padding: 0.15rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.8rem;
+    }
+    .badge-base {
+      color: var(--base);
+      background: #fee2e2;
+      padding: 0.15rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.8rem;
+    }
+    video {
+      width: 100%;
+      border-radius: 0.4rem;
+      background: #000;
+      border: 1px solid var(--border);
+    }
+    .hidden { display: none; }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      padding: 2rem 0 3rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Energy-Aware Replenishment and Hierarchical Formation Control for Persistent Multi-UAV Urban Target Tracking</h1>
+      <div class="affil">Supplementary 3D Trajectory Comparison Animations &nbsp;|&nbsp; <a href="https://github.com/ESDerg/RAS-UAVs-Battery" style="color:#93c5fd;">GitHub Repository</a></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="nav-tabs">
+      <button id="tab-follow" class="tab-btn active" onclick="switchParadigm('follow')">Paradigm 1: Continuous Trailing Platform (follow/)</button>
+      <button id="tab-pads" class="tab-btn" onclick="switchParadigm('pads')">Paradigm 2: Distributed Fixed Stations (pads/)</button>
+    </div>
+
+    <div id="desc-follow" class="paradigm-desc">
+      <strong>Paradigm 1 — Continuous Trailing Platform (<code>follow/</code>):</strong> A heavy UGV carrying a single rooftop battery-swapping pad trails the target car along its route at a standoff distance of 25 m. Closed-loop 600 s mission trials at 4.0 C discharge rate with shared safety reserve <em>T</em><sub>res</sub> = 60 s.
+    </div>
+    <div id="desc-pads" class="paradigm-desc hidden">
+      <strong>Paradigm 2 — Distributed Fixed Swapping Stations (<code>pads/</code>):</strong> Four stationary UGV battery-swapping pads are deployed at periphery locations across the Town10 road network (mean nearest-pad distance 51 m, 95th percentile 94 m). Departing UAVs select the station minimizing predicted 3D flight time plus queue wait time and execute hierarchical 3D return/rejoin trajectories.
+    </div>
+
+    <div id="routes-container"></div>
+  </main>
+
+  <footer>
+    Supplementary video gallery &bull; All videos encoded with H.264 (<code>yuv420p</code>, <code>+faststart</code>) for direct streaming and timeline scrubbing.
+  </footer>
+
+  <script>
+    const RAW_BASE = 'https://raw.githubusercontent.com/ESDerg/RAS-UAVs-Battery/main/';
+    const videoBaseUrl = (location.hostname === 'htmlpreview.github.io') ? RAW_BASE : '';
+
+    const routes = [
+      { id: 'ring', name: 'Outer Ring Road', desc: 'Perimeter loop road around the city block' },
+      { id: 'A',    name: 'Route A',         desc: 'Interior urban route with frequent intersection turns' },
+      { id: 'B',    name: 'Route B',         desc: 'Interior urban route with frequent intersection turns' },
+      { id: 'U1',   name: 'Route U1',        desc: 'Urban route with 180° U-turns (2 per 798 m lap)' },
+      { id: 'U2',   name: 'Route U2',        desc: 'Urban route with 180° U-turns (1 per 479 m lap)' }
+    ];
+
+    let currentParadigm = 'follow';
+
+    function renderRoutes(paradigm) {
+      const container = document.getElementById('routes-container');
+      container.innerHTML = routes.map(r => `
+        <div class="route-card" id="card-${r.id}">
+          <div class="route-header">
+            <div>
+              <span class="route-title">${r.name}</span>
+              <span class="route-sub">${r.desc}</span>
+            </div>
+            <div class="controls-bar">
+              <button class="ctrl-btn" onclick="togglePair('${r.id}')">Play / Pause Both</button>
+              <button class="ctrl-btn" onclick="resetPair('${r.id}')">Restart Both (0s)</button>
+              <button class="ctrl-btn" onclick="ratePair('${r.id}', 1.0)">1x</button>
+              <button class="ctrl-btn" onclick="ratePair('${r.id}', 2.0)">2x</button>
+            </div>
+          </div>
+          <div class="video-grid">
+            <div class="video-box">
+              <div class="video-label">
+                <span>Proposed: <code>Thevenin+3D</code></span>
+                <span class="badge-ours">Ours (${paradigm}/${r.id}_ours.mp4)</span>
+              </div>
+              <video id="vid-ours-${r.id}" controls preload="metadata" playsinline src="${videoBaseUrl}${paradigm}/${r.id}_ours.mp4"></video>
+            </div>
+            <div class="video-box">
+              <div class="video-label">
+                <span>Baseline: <code>linear+hor</code></span>
+                <span class="badge-base">Baseline (${paradigm}/${r.id}_base.mp4)</span>
+              </div>
+              <video id="vid-base-${r.id}" controls preload="metadata" playsinline src="${videoBaseUrl}${paradigm}/${r.id}_base.mp4"></video>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function switchParadigm(p) {
+      currentParadigm = p;
+      document.getElementById('tab-follow').classList.toggle('active', p === 'follow');
+      document.getElementById('tab-pads').classList.toggle('active', p === 'pads');
+      document.getElementById('desc-follow').classList.toggle('hidden', p !== 'follow');
+      document.getElementById('desc-pads').classList.toggle('hidden', p !== 'pads');
+      renderRoutes(p);
+    }
+
+    function togglePair(id) {
+      const v1 = document.getElementById(`vid-ours-${id}`);
+      const v2 = document.getElementById(`vid-base-${id}`);
+      if (v1.paused && v2.paused) {
+        v1.play(); v2.play();
+      } else {
+        v1.pause(); v2.pause();
+      }
+    }
+
+    function resetPair(id) {
+      const v1 = document.getElementById(`vid-ours-${id}`);
+      const v2 = document.getElementById(`vid-base-${id}`);
+      v1.currentTime = 0;
+      v2.currentTime = 0;
+    }
+
+    function ratePair(id, rate) {
+      document.getElementById(`vid-ours-${id}`).playbackRate = rate;
+      document.getElementById(`vid-base-${id}`).playbackRate = rate;
+    }
+
+    function applyHashNavigation() {
+      const h = (location.hash || '').replace('#', '');
+      if (!h) {
+        renderRoutes(currentParadigm);
+        return;
+      }
+      const parts = h.split('-');
+      const p = (parts[0] === 'pads' || parts[0] === 'follow') ? parts[0] : 'follow';
+      const routeId = parts[1] || '';
+      const role = parts[2] || '';
+      switchParadigm(p);
+      if (routeId) {
+        const card = document.getElementById(`card-${routeId}`);
+        if (card) {
+          card.classList.add('highlight');
+          setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 150);
+          const vid = document.getElementById(`vid-${role === 'base' ? 'base' : 'ours'}-${routeId}`);
+          if (vid) {
+            vid.play().catch(() => {});
+          }
+        }
+      }
+    }
+
+    window.addEventListener('hashchange', applyHashNavigation);
+    applyHashNavigation();
+  </script>
+</body>
+</html>

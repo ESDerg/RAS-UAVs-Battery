@@ -1,4 +1,4 @@
-# Energy-Aware Replenishment and Hierarchical Formation Control for Persistent Multi-UAV Urban Target Tracking
+# Energy-aware hierarchical formation control of multi-UAV for persistent urban target tracking
 
 [![Watch Online (Interactive Video Player)](https://img.shields.io/badge/%E2%96%B6_Watch_All_Videos_Online-Interactive_Side--by--Side_Player-1d4ed8?style=for-the-badge)](https://htmlpreview.github.io/?https://github.com/ESDerg/RAS-UAVs-Battery/blob/main/index.html)
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository provides supplementary 3D trajectory comparison animations for the paper **"Energy-aware replenishment and hierarchical formation control for persistent multi-UAV urban target tracking"**.
+This repository provides supplementary 3D trajectory comparison animations for the paper **"Energy-aware hierarchical formation control of multi-UAV for persistent urban target tracking"**.
 
 To sustain continuous multi-UAV coverage of a moving ground target across repeated battery-replenishment cycles in urban environments, our hierarchical framework decouples flight control from energy management:
 - **3D Formation NMPC:** Maintains cooperative target-tracking geometry and local 3D obstacle avoidance across staggered cruise altitudes ($z_{\mathrm{cr}} \in \{20, 30, 40\}\,\mathrm{m}$ AGL).
